@@ -1,0 +1,19 @@
+## js lib: mainly use to create dynamic ui
+(build by facebook(meta))
+
+## in react everything is component(break the whole ui into small small block)
+
+//react doesn't direct affect the real dom so its create a virtual dom:
+
+
+On first render → React creates Virtual DOM → then immediately creates real DOM from it
+On updates → React creates new Virtual DOM → compares → updates existing real DOM (NOT recreates)
+
+
+//workflow:
+-write a code in jsx
+- react convert that jsx into js object
+- from this react create a real dom(which shows on the screen using browser api);
+- when usestate update its create another virtual dom of it and then compare old vdom vs new vdom and then upadted real dom 
+
+
